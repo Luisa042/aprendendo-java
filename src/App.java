@@ -22,9 +22,9 @@ public class App {
 
         // show parsed data
         for (Map<String,String> movie : movieList) {
-            System.out.println(movie.get("title"));
-            System.out.println(movie.get("image"));
-            System.out.println(movie.get("imDbRating"));
+            System.out.println("\u001b[1mTitle:\u001b[0m " + movie.get("title"));
+            System.out.println("\u001b[1mImage URL:\u001b[0m " + movie.get("image"));
+            System.out.println("\u001b[1mRating:\u001b[0m " + movie.get("imDbRating"));
             System.out.println();
         }
     }
